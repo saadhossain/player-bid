@@ -17,11 +17,11 @@ function selectPlayer(element) {
         // listContainer.innerHTML = '';
         const playerSelect = document.createElement('ul');
         playerSelect.innerHTML = `
-        <li class="mx-4 my-1 font-semibold"><span>${playerCount}.</span> ${player}</li>
+        <li class="mx-4 my-1 font-semibold"><span class="mr-3">${playerCount}.</span> ${player}</li>
         `;
         listContainer.appendChild(playerSelect);
         //Disabled Button After Added
         element.setAttribute('disabled', true);
-        element.style.backgroundColor = '#698bd5';
+        element.style.backgroundColor = '#818CF8';
     }
 }
