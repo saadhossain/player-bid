@@ -242,27 +242,29 @@
                     <!-- Player Expenses Section -->
                     <div class="flex items-center w-9/12 mx-auto mt-4">
                         <label for="per-player" class="w-1/2">Per Player</label>
-                        <input type="text" id="per-player" class="w-1/2 rounded py-1 px-2 focus:outline-none">
+                        <input type="text" id="per-player-field" class="w-1/2 rounded py-1 px-2 focus:outline-none text-gray-900 font-semibold">
                     </div>
-                    <button class="bg-blue-700 text-white w-9/12 mx-auto py-2 px-3 my-4 rounded">Calculate</button>
-                    <h4 class="text-xl text-center mb-5">Player Expenses: <span id="player-expense">0</span></h4>
+                    <button id="calculate-btn" class="bg-blue-700 text-white w-9/12 mx-auto py-2 px-3 my-4 rounded">Calculate</button>
+                    <h4 class="text-xl text-center mb-5">Player Expenses: $<span id="player-expense">0</span></h4>
                     <!-- Others Expenses and final expense Section -->
                     <div class="flex items-center w-9/12 mx-auto mb-4">
-                        <label for="per-player" class="w-1/2">Manager</label>
-                        <input type="text" id="per-player" class="w-1/2 rounded py-1 px-2 focus:outline-none">
+                        <label for="manager-field" class="w-1/2">Manager</label>
+                        <input type="text" id="manager-field" class="w-1/2 rounded py-1 px-2 focus:outline-none text-gray-900 font-semibold">
                     </div>
                     <div class="flex items-center w-9/12 mx-auto">
-                        <label for="per-player" class="w-1/2">Coach</label>
-                        <input type="text" id="per-player" class="w-1/2 rounded py-1 px-2 focus:outline-none">
+                        <label for="coach-field" class="w-1/2">Coach</label>
+                        <input type="text" id="coach-field" class="w-1/2 rounded py-1 px-2 focus:outline-none text-gray-900 font-semibold">
                     </div>
-                    <button class="bg-blue-700 text-white w-9/12 mx-auto py-2 px-3 my-4 rounded">Calculate Total</button>
-                    <h4 class="text-xl text-center mb-5">Total Expenses: <span id="player-expense">0</span></h4>
+                    <button id="calculate-total-btn" class="bg-blue-700 text-white w-9/12 mx-auto py-2 px-3 my-4 rounded">Calculate Total</button>
+                    <h4 class="text-xl text-center mb-5">Total Expenses: $<span id="total-expense">0</span></h4>
                 </div>
             </div>
         </section>
     </main>
     <!-- Script files -->
+    <script src="js/utility.js"></script>
     <script src="js/selection.js"></script>
+    <script src="js/calculation.js"></script>
 </body>
 
 </html>
