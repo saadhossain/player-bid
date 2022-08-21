@@ -6,12 +6,261 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Bid</title>
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daily UI Linking -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <!-- Navigation Area -->
+        <div class="navbar bg-base-100 md:w-9/12 md:mx-auto w-full">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>Players</a></li>
+                    <li><a>Current Auction</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl"><img src="img/icon.svg" alt="Player Bid" class="mr-2" height="40px" width="40px"> Player Bid</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal p-0">
+                <li><a>Home</a></li>
+                <li><a>Players</a></li>
+                <li><a>Current Auction</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Start Bid</a>
+            </div>
+        </div>
+        <!-- Header Banner -->
+        <section class="header-banner md:w-9/12 md:mx-auto w-full bg-indigo-500 rounded-xl">
+            <div class="flex content-between">
+                <img src="img/messi-full.png" alt="Lionel Messi">
+                <img src="img/neymar-full.png" alt="Neymar Junior">
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Main Section start -->
+        <section class="flex w-9/12 mx-auto my-10 gap-5">
+            <!-- Players Grids -->
+            <div class="grid grid-cols-3 gap-4 w-9/12">
+                <!-- Lionel Messi -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/lionel-messi.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Lionel Messi</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Ronaldo -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/christiano-ronaldo.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Christiano Ronaldo</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Neymar Junior -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/neymar-junior.jpeg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Neymar Junior</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Harry Kane -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/harry-kane.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Harry Kane</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Benezema -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/karim-benzema.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Karim Benezema</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Mbappe -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/kylian-mbappe.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Kylian Mbappe</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Luise Suarage -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/luis-suarez.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Luis Suarez</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Lukaku -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/romelu-lukaku.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Romelu Lukaku</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Mohammad Salah -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/mohamed-salah.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Mohammad Salah</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Kevin De Bruyne -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/kevin-de-bruyne.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Kevin De Bruyne</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Bruno Fernandes -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/bruno-fernandes.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Bruno Fernandes</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Serge Gnabry -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/serge-gnabry.jpg" alt="Messi" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Serge Gnabry</h2>
+                      <div class="flex content-around mx-auto gap-5">
+                        <p>36 Gaols</p>
+                        <p>55 Assists</p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="bg-blue-600 py-3 px-8 rounded text-white font-semibold">Select</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-3/12">
+                <!-- Selected Player Area -->
+                <div class="bg-black justify-center rounded-lg my-5">
+                    <h2 class="text-3xl text-center p-5">Selected: <span class="selected-player">0</span></h2>
+                    <ul id="selected-container">
 
+                    </ul>
+                </div>
+                <!-- Budget and Calculation Area -->
+                <div class="bg-black rounded-lg my-5 flex flex-col">
+                    <h2 class="text-3xl text-center p-5">Budget</h2>
+                    <!-- Player Expenses Section -->
+                    <div class="flex items-center w-9/12 mx-auto">
+                        <label for="per-player" class="w-1/2">Per Player</label>
+                        <input type="text" id="per-player" class="w-1/2 rounded py-1 px-2 focus:outline-none">
+                    </div>
+                    <button class="bg-blue-700 text-white w-9/12 mx-auto py-2 px-3 my-4 rounded">Calculate</button>
+                    <h4 class="text-xl text-center mb-5">Player Expenses: <span id="player-expense">0</span></h4>
+                    <!-- Others Expenses and final expense Section -->
+                    <div class="flex items-center w-9/12 mx-auto mb-4">
+                        <label for="per-player" class="w-1/2">Manager</label>
+                        <input type="text" id="per-player" class="w-1/2 rounded py-1 px-2 focus:outline-none">
+                    </div>
+                    <div class="flex items-center w-9/12 mx-auto">
+                        <label for="per-player" class="w-1/2">Coach</label>
+                        <input type="text" id="per-player" class="w-1/2 rounded py-1 px-2 focus:outline-none">
+                    </div>
+                    <button class="bg-blue-700 text-white w-9/12 mx-auto py-2 px-3 my-4 rounded">Calculate Total</button>
+                    <h4 class="text-xl text-center mb-5">Total Expenses: <span id="player-expense">0</span></h4>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
