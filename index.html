@@ -48,17 +48,20 @@
         </div>
         <!-- Header Banner -->
         <section class="header-banner md:w-9/12 md:mx-auto w-full bg-indigo-500 rounded-xl">
-            <div class="flex content-between">
+            <div class="flex content-between items-center">
                 <img src="img/messi-full.png" alt="Lionel Messi">
-                <img src="img/neymar-full.png" alt="Neymar Junior">
+                <div class="hidden md:block">
+                    <h1 class="text-5xl font-bold text-white">Find Top Player for Low Cost</h1>
+                    <p class="text-xl text-white">"<i>Player Bid</i>" is World most popular Auction Platform for Both Football Player and Club Owner.</p>
+                </div>
             </div>
         </section>
     </header>
     <main>
         <!-- Main Section start -->
-        <section class="flex w-9/12 mx-auto my-10 gap-5">
+        <section class="md:flex w-full md:w-9/12 mx-auto my-10 gap-5">
             <!-- Players Grids -->
-            <div class="grid grid-cols-3 gap-4 w-9/12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-11/12 md:w-9/12 mx-4">
                 <!-- Lionel Messi -->
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure><img src="img/lionel-messi.jpg" alt="Messi" /></figure>
@@ -228,7 +231,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-3/12">
+            <div class="w-11/12 md:w-3/12 mx-4">
                 <!-- Selected Player Area -->
                 <div class="bg-black justify-center rounded-lg my-5">
                     <h2 class="text-3xl text-center p-5">Selected: <span class="selected-player">0</span></h2>
